@@ -25,6 +25,7 @@ module.exports = {
       fontFamily:{
         'syne': 'Syne',
         'rubik': 'rubik',
+        'inter': 'inter',
       },
     },
   },
