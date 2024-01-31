@@ -16,9 +16,15 @@
   </head>
   <body>
     <main class="bg-secondery-100 pt-[33px] font-syne overflow-hidden">
-      <div class="hero h-screen px-[140px]">
-        <header>
-          <nav class="flex justify-between items-center relative z-[1000]">
+      <div
+        class="hero h-screen px-[140px] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0"
+      >
+        <header
+          class="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0"
+        >
+          <nav
+            class="flex justify-between items-center relative z-[1000] max-sm:hidden"
+          >
             <a href="./index.html">
               <div class="logo">
                 <svg
@@ -80,6 +86,72 @@
               </ul>
             </div>
           </nav>
+          <nav class="hidden max-sm:flex justify-between w-full px-8">
+            <a href="./index.html">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="125"
+                  height="28"
+                  viewBox="0 0 125 28"
+                  fill="none"
+                >
+                  <circle
+                    cx="71"
+                    cy="14"
+                    r="9"
+                    stroke="white"
+                    stroke-opacity="0.15"
+                    stroke-width="10"
+                  />
+                  <circle
+                    opacity="0.6"
+                    cx="71"
+                    cy="14"
+                    r="8"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M2.91009 25H0L8.41688 3H11.2822L19.6991 25H16.789L9.93908 6.48047H9.76L2.91009 25ZM3.98459 16.4063H15.7145V18.7695H3.98459V16.4063Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M24.2097 25H21.2996L29.7165 3H32.5818L40.9987 25H38.0886L31.2387 6.48047H31.0596L24.2097 25ZM25.2842 16.4063H37.0141V18.7695H25.2842V16.4063Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M44.5692 25V3H52.3145C54.1053 3 55.5753 3.29362 56.7244 3.88086C57.8735 4.46094 58.7242 5.25944 59.2763 6.27637C59.8285 7.29329 60.1046 8.44987 60.1046 9.74609C60.1046 11.0423 59.8285 12.1917 59.2763 13.1943C58.7242 14.1969 57.8773 14.9847 56.7356 15.5576C55.5939 16.1234 54.1352 16.4063 52.3593 16.4063H46.0914V14H52.2697C53.4935 14 54.4784 13.8281 55.2246 13.4844C55.9782 13.1406 56.5229 12.6536 56.8587 12.0234C57.202 11.3861 57.3736 10.627 57.3736 9.74609C57.3736 8.86523 57.202 8.09538 56.8587 7.43652C56.5155 6.77767 55.967 6.26921 55.2134 5.91113C54.4598 5.5459 53.4636 5.36328 52.225 5.36328H47.345V25H44.5692ZM55.3589 15.1172L61 25H57.7765L52.225 15.1172H55.3589Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M101.217 3V25H98.5246L86.0062 7.72656H85.7819V25H83V3H85.6921L98.2554 20.3164H98.4797V3H101.217Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M125 3V25H122.308L109.789 7.72656H109.565V25H106.783V3H109.475L122.039 20.3164H122.263V3H125Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              height="32px"
+              id="Layer_1"
+              style="enable-background: new 0 0 32 32"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+            >
+              <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+                style="fill: #fff"
+              />
+            </svg>
+          </nav>
 
           <div
             class="container text-white w-full flex flex-col items-center mt-[17%]"
@@ -87,7 +159,7 @@
             data-aos-duration="1000"
           >
             <svg
-              class="absolute top-[-72%] right-[-15%] z-0"
+              class="absolute top-[-72%] right-[-15%] z-0 max-sm:left-0 max-sm:top-[-110%]"
               xmlns="http://www.w3.org/2000/svg"
               width="917"
               height="651"
@@ -125,7 +197,9 @@
                 </filter>
               </defs>
             </svg>
-            <h1 class="text-[72px] w-[80%] text-center font-bold">
+            <h1
+              class="text-[72px] w-[80%] text-center font-bold max-sm:text-center max-sm:text-[45px] max-sm:w-auto"
+            >
               Adaptive Logo Design for Your Brand
             </h1>
             <a href="./my-works.html">
@@ -161,14 +235,17 @@
         </header>
       </div>
 
-      <section class="aboutMe h-screen flex items-center relative px-[140px]">
+      <section
+        class="aboutMe h-screen flex items-center relative px-[140px] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0 
+        max-sm:h-auto max-sm:justify-between"
+      >
         <div
-          class="textContainer flex flex-col w-1/2"
+          class="textContainer flex flex-col w-1/2 max-sm:w-full max-sm:px-8 max-sm:items-center "
           data-aos="fade-right"
           data-aos-duration="1000"
         >
           <svg
-            class="absolute top-[-70%] right-[20%]"
+            class="absolute top-[-70%] right-[20%] max-sm:top-0"
             xmlns="http://www.w3.org/2000/svg"
             width="917"
             height="651"
@@ -206,10 +283,10 @@
               </filter>
             </defs>
           </svg>
-          <h2 class="text-[56px] font-bold text-white">
+          <h2 class="text-[56px] font-bold text-white max-sm:text-center max-sm:text-[40px] max-sm:w-auto ">
             Let’s get know about me closer
           </h2>
-          <p class="text-[#A8A8A8] text-[18px] font-rubik font-normal">
+          <p class="text-[#A8A8A8] text-[18px] font-rubik font-normal max-sm:text-center max-sm:mt-2">
             Aaronn is a New York-based visual designer focusing on branding and
             visual identity. Her portfolio showcases her wide range of work,
             spanning books, posters and web design.
@@ -222,7 +299,7 @@
         </div>
 
         <div
-          class="imageContainer w-1/2"
+          class="imageContainer w-1/2  max-sm:w-full max-sm:px-8 max-sm:items-center max-sm:mt-10"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -230,9 +307,10 @@
         </div>
       </section>
 
-      <section class="myProjects w-full flex flex-col items-center px-[140px]">
+      <section class="myProjects w-full flex flex-col items-center px-[140px]
+       max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8">
         <h2
-          class="text-[64px] font-bold text-white"
+          class="text-[64px] font-bold text-white max-sm:w-full max-sm:text-center max-sm:text-[40px] max-sm:mt-[20%]"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
@@ -268,9 +346,10 @@
           </svg>
         </button>
 
-        <div class="cardsContainer w-full mt-[5%] flex flex-wrap">
+        <div class="cardsContainer w-full mt-[5%] flex flex-wrap 
+        max-sm:flex max-sm:flex-col max-sm:items-center ">
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between"
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -301,7 +380,7 @@
             </div>
           </div>
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between"
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -330,11 +409,13 @@
             </div>
           </div>
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between"
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <a href="./project-detail.html"><img src="../images/card-image-3.png" alt="" /></a>
+            <a href="./project-detail.html"
+              ><img src="../images/card-image-3.png" alt=""
+            /></a>
 
             <div class="titleContainer flex items-center">
               <h3 class="text-[24px] font-syne font-bold">NFT Glimps</h3>
@@ -357,11 +438,13 @@
             </div>
           </div>
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between"
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <a href="./project-detail.html"><img src="../images/card-image-4.png" alt="" /></a>
+            <a href="./project-detail.html"
+              ><img src="../images/card-image-4.png" alt=""
+            /></a>
 
             <div class="titleContainer flex items-center">
               <h3 class="text-[24px] font-syne font-bold">Brand Suggestions</h3>
@@ -387,14 +470,15 @@
       </section>
 
       <section
-        class="testimonial h-[60vh] flex justify-between mt-[14%] px-[140px]"
+        class="testimonial h-[60vh] flex justify-between mt-[14%] px-[140px]
+        max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-sm:mt-0 max-sm:h-[75vh]"
       >
         <div
-          class="textBox w-2/3 h-[80%] flex flex-col justify-between"
+          class="textBox w-2/3 h-[80%] flex flex-col justify-between max-sm:w-full max-sm:items-center"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h2 class="relative text-[64px] text-white font-bold">
+          <h2 class="relative text-[64px] text-white font-bold maxs">
             Testimonial
             <svg
               class="absolute z-10 top-[-270%] left-[-50%]"
@@ -436,7 +520,7 @@
               </defs>
             </svg>
           </h2>
-          <p class="text-[#949494] text-[18px] font-rubik">
+          <p class="text-[#949494] text-[18px] font-rubik max-sm:text-justify">
             “Aaronn was fantastic to work with from start to finish. We were
             looking for a simple, stand-out logo and he delivered. I tried
             designing the logo myself thinking I wouldn’t need to pay the money
@@ -447,11 +531,11 @@
             professionalism. I would recommend him to anyone looking for a
             design!”
           </p>
-          <h3 class="text-white text-[24px] font-bold">-Martin lee</h3>
+          <h3 class="text-white text-[24px] font-bold max-sm:self-end">-Martin lee</h3>
         </div>
 
         <div
-          class="iconContainer p-5"
+          class="iconContainer p-5 max-sm:hidden"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -486,7 +570,8 @@
       </section>
 
       <footer
-        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white"
+        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white
+         max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8"
       >
         <div
           class="title flex flex-col items-center"
@@ -494,13 +579,13 @@
           data-aos-duration="800"
         >
           <h2 class="text-main text-[24px] font-bold">Get in Touch With Us</h2>
-          <a href="" class="text-[64px] font-bold"
+          <a href="" class="text-[64px] font-bold max-sm:text-[50px]"
             >info@aaronn.com
             <div class="line w-full h-1 bg-white mt-[-20px]"></div>
           </a>
         </div>
         <div
-          class="info w-full flex justify-between items-center"
+          class="info w-full flex justify-between items-center max-sm:flex-col max-sm:h-[300px]"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
