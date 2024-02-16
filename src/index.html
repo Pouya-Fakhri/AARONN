@@ -17,13 +17,14 @@
   <body>
     <main class="bg-secondery-100 pt-[33px] font-syne overflow-hidden">
       <div
-        class="hero h-screen px-[140px] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0"
+        class="hero h-screen px-[140px] 
+        max-md:flex max-lg:justify max-lg:px-20 max-lg:mt-2 max-sm:px-0 max-md:px-16"
       >
         <header
-          class="max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0"
+          class="max-lg:flex max-lg:flex-col max-lg:items-center max-sm:px-0"
         >
           <nav
-            class="flex justify-between items-center relative z-[1000] max-sm:hidden"
+            class="flex justify-between items-center w-full relative z-[1000] max-md:hidden"
           >
             <a href="./index.html">
               <div class="logo">
@@ -75,7 +76,7 @@
             </a>
             <div class="navObjects">
               <ul class="flex items-center gap-[45px] text-white/50 font-bold">
-                <li><a href="">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./abuot-me.html">About me</a></li>
                 <li><a href="./my-works.html">My works</a></li>
                 <li
@@ -86,7 +87,7 @@
               </ul>
             </div>
           </nav>
-          <nav class="hidden max-sm:flex justify-between w-full px-8">
+          <nav class="hidden max-md:flex max-sm:px-8 justify-between w-full">
             <a href="./index.html">
               <div class="logo">
                 <svg
@@ -154,7 +155,7 @@
           </nav>
 
           <div
-            class="container text-white w-full flex flex-col items-center mt-[17%]"
+            class="container text-white w-full flex flex-col justify-center items-center mt-[17%]"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -198,12 +199,14 @@
               </defs>
             </svg>
             <h1
-              class="text-[72px] w-[80%] text-center font-bold max-sm:text-center max-sm:text-[45px] max-sm:w-auto"
+              class="text-[72px] w-[85%] text-center font-bold 
+              max-lg:text-[50px] max-md:text-center max-md:text-[45px] max-md:w-auto"
             >
               Adaptive Logo Design for Your Brand
             </h1>
             <a href="./my-works.html">
-              <button
+              <a
+                href="./my-works.html"
                 class="cta w-[240px] h-[65px] bg-main rounded-full font-rubik font-bold flex justify-evenly items-center mt-[8%]"
               >
                 Explore works
@@ -229,18 +232,17 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-              </button>
+              </a>
             </a>
           </div>
         </header>
       </div>
 
       <section
-        class="aboutMe h-screen flex items-center relative px-[140px] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-0 
-        max-sm:h-auto max-sm:justify-between"
+        class="aboutMe h-screen flex items-center relative px-[140px] max-lg:px-20 max-md:flex-col max-md:items-center max-md:justify-between max-md:px-16 max-md:h-auto max-sm:px-8"
       >
         <div
-          class="textContainer flex flex-col w-1/2 max-sm:w-full max-sm:px-8 max-sm:items-center "
+          class="textContainer flex flex-col w-1/2 max-md:w-full max-md:items-center"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
@@ -283,23 +285,29 @@
               </filter>
             </defs>
           </svg>
-          <h2 class="text-[56px] font-bold text-white max-sm:text-center max-sm:text-[40px] max-sm:w-auto ">
+          <h2
+            class="text-[56px] font-bold text-white max-md:text-center max-lg:text-[50px] max-md:text-[40px] max-md:w-auto"
+          >
             Let’s get know about me closer
           </h2>
-          <p class="text-[#A8A8A8] text-[18px] font-rubik font-normal max-sm:text-center max-sm:mt-2">
+          <p
+            class="text-[#A8A8A8] text-[18px] text-justify font-rubik font-normal max-md:text-center max-md:mt-2"
+          >
             Aaronn is a New York-based visual designer focusing on branding and
             visual identity. Her portfolio showcases her wide range of work,
             spanning books, posters and web design.
           </p>
-          <button
-            class="cta w-[290px] h-[60px] bg-main text-[#FDFDFD] rounded-full font-rubik font-semibold flex justify-evenly items-center mt-[8%]"
-          >
-            Discover More About Me
-          </button>
+          <a href="./abuot-me.html">
+            <button
+              class="cta w-[290px] h-[60px] bg-main text-[#FDFDFD] rounded-full font-rubik font-semibold flex justify-evenly items-center mt-[8%]"
+            >
+              Discover More About Me
+            </button>
+          </a>
         </div>
 
         <div
-          class="imageContainer w-1/2  max-sm:w-full max-sm:px-8 max-sm:items-center max-sm:mt-10"
+          class="imageContainer w-1/2 max-md:items-center max-md:mt-10 max-md:w-[80%] max-sm:w-full"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -307,49 +315,53 @@
         </div>
       </section>
 
-      <section class="myProjects w-full flex flex-col items-center px-[140px]
-       max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8">
+      <section
+        class="myProjects w-full flex flex-col items-center px-[140px] max-lg:px-20 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-md:px-16"
+      >
         <h2
-          class="text-[64px] font-bold text-white max-sm:w-full max-sm:text-center max-sm:text-[40px] max-sm:mt-[20%]"
+          class="text-[64px] font-bold text-white max-lg:w-full max-lg:mt-[10%] max-lg:text-center max-lg:text-[50px] max-md:mt-[20%]"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
           My Projects Highlight
         </h2>
-        <button
-          class="w-[240px] h-[65px] text-[#FDFDFD] marker:text-[13px] rounded-full border-solid border-main border font-rubik font-bold flex justify-evenly items-center mt-[5%]"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          Explore More
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="12"
-            viewBox="0 0 18 12"
-            fill="none"
+        <a href="./my-works.html">
+          <button
+            class="w-[240px] h-[65px] text-[#FDFDFD] marker:text-[13px] rounded-full border-solid border-main border font-rubik font-bold flex justify-evenly items-center mt-[5%]"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
           >
-            <path
-              d="M1 5.5H17"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M12 1L17 6L12 11"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+            Explore More
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="12"
+              viewBox="0 0 18 12"
+              fill="none"
+            >
+              <path
+                d="M1 5.5H17"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 1L17 6L12 11"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </a>
 
-        <div class="cardsContainer w-full mt-[5%] flex flex-wrap 
-        max-sm:flex max-sm:flex-col max-sm:items-center ">
+        <div
+          class="cardsContainer w-full mt-[5%] flex flex-wrap max-sm:flex max-sm:flex-col max-sm:items-center"
+        >
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly max-sm:mt-[10%] max-lg:h-[600px]"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -358,13 +370,15 @@
             /></a>
 
             <div class="titleContainer flex items-center">
-              <h3 class="text-[24px] font-syne font-bold">
+              <h3 class="text-[24px] font-syne font-bold w-[50%]">
                 Brand Journey Improvements
               </h3>
-              <span class="line w-[48px] h-[1px] bg-main ml-[4%]"></span>
+              <span class="line w-[48px] h-[1px] bg-main"></span>
             </div>
 
-            <div class="aboutProject flex justify-between w-[40%]">
+            <div
+              class="aboutProject flex justify-between w-[40%] max-lg:w-[70%]"
+            >
               <p class="text-[#606060] text-[14px] font-rubik font-normal">
                 Client:
                 <br />
@@ -379,8 +393,9 @@
               </p>
             </div>
           </div>
+
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly max-sm:mt-[10%] max-lg:h-[600px]"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -393,7 +408,9 @@
               <span class="line w-[48px] h-[1px] bg-main ml-[4%]"></span>
             </div>
 
-            <div class="aboutProject flex justify-between w-[40%]">
+            <div
+              class="aboutProject flex justify-between w-[40%] max-lg:w-[70%]"
+            >
               <p class="text-[#606060] text-[14px] font-rubik font-normal">
                 Client:
                 <br />
@@ -409,7 +426,7 @@
             </div>
           </div>
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-lg:h-[600px] max-sm:w-[500px] max-sm:justify-evenly max-sm:mt-[10%] max-md:h-[600px]"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -422,7 +439,9 @@
               <span class="line w-[48px] h-[1px] bg-main ml-[4%]"></span>
             </div>
 
-            <div class="aboutProject flex justify-between w-[25%]">
+            <div
+              class="aboutProject flex justify-between w-[25%] max-lg:w-[50%]"
+            >
               <p class="text-[#606060] text-[14px] font-rubik font-normal">
                 Client:
                 <br />
@@ -438,7 +457,7 @@
             </div>
           </div>
           <div
-            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-sm:w-[500px] max-sm:justify-evenly "
+            class="card p-5 w-[50%] h-[770px] text-white flex flex-col justify-between max-lg:h-[600px] max-sm:w-[500px] max-sm:justify-evenly max-sm:mt-[10%]"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -451,7 +470,9 @@
               <span class="line w-[48px] h-[1px] bg-main ml-[4%]"></span>
             </div>
 
-            <div class="aboutProject flex justify-between w-[25%]">
+            <div
+              class="aboutProject flex justify-between w-[25%] max-md:w-[40%] max-lg:w-[50%]"
+            >
               <p class="text-[#606060] text-[14px] font-rubik font-normal">
                 Client:
                 <br />
@@ -470,15 +491,16 @@
       </section>
 
       <section
-        class="testimonial h-[60vh] flex justify-between mt-[14%] px-[140px]
-        max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-sm:mt-0 max-sm:h-[75vh]"
+        class="testimonial h-[60vh] flex justify-between mt-[14%] px-[140px] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-sm:mt-0 max-lg:h-[75vh] max-md:px-16 max-lg:px-20"
       >
         <div
-          class="textBox w-2/3 h-[80%] flex flex-col justify-between max-sm:w-full max-sm:items-center"
+          class="textBox w-2/3 h-[80%] flex flex-col justify-between max-md:w-full max-md:items-center"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          <h2 class="relative text-[64px] text-white font-bold maxs">
+          <h2
+            class="relative text-[64px] text-white font-bold max-lg:text-[50px]"
+          >
             Testimonial
             <svg
               class="absolute z-10 top-[-270%] left-[-50%]"
@@ -520,7 +542,7 @@
               </defs>
             </svg>
           </h2>
-          <p class="text-[#949494] text-[18px] font-rubik max-sm:text-justify">
+          <p class="text-[#949494] text-[18px] font-rubik text-justify">
             “Aaronn was fantastic to work with from start to finish. We were
             looking for a simple, stand-out logo and he delivered. I tried
             designing the logo myself thinking I wouldn’t need to pay the money
@@ -531,11 +553,13 @@
             professionalism. I would recommend him to anyone looking for a
             design!”
           </p>
-          <h3 class="text-white text-[24px] font-bold max-sm:self-end">-Martin lee</h3>
+          <h3 class="text-white text-[24px] font-bold max-md:self-end">
+            -Martin lee
+          </h3>
         </div>
 
         <div
-          class="iconContainer p-5 max-sm:hidden"
+          class="iconContainer p-5 max-md:hidden"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -570,8 +594,7 @@
       </section>
 
       <footer
-        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white
-         max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8"
+        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-md:px-16"
       >
         <div
           class="title flex flex-col items-center"
@@ -579,13 +602,13 @@
           data-aos-duration="800"
         >
           <h2 class="text-main text-[24px] font-bold">Get in Touch With Us</h2>
-          <a href="" class="text-[64px] font-bold max-sm:text-[50px]"
+          <a href="" class="text-[64px] font-bold max-md:text-[50px]"
             >info@aaronn.com
             <div class="line w-full h-1 bg-white mt-[-20px]"></div>
           </a>
         </div>
         <div
-          class="info w-full flex justify-between items-center max-sm:flex-col max-sm:h-[300px]"
+          class="info w-full flex justify-between items-center max-md:flex-col max-md:h-[300px]"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
