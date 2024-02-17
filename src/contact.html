@@ -16,9 +16,13 @@
   </head>
   <body>
     <main class="bg-secondery-100 pt-[33px] font-syne overflow-hidden">
-      <div class="hero px-[140px]">
-        <header>
-          <nav class="flex justify-between items-center relative z-[1000]">
+      <div
+        class="hero px-[140px] max-lg:px-20 w-screen max-md:px-16 max-sm:px-0"
+      >
+        <header class="flex flex-col">
+          <nav
+            class="flex justify-between items-center w-full relative z-[1000] max-md:hidden"
+          >
             <a href="./index.html">
               <div class="logo">
                 <svg
@@ -75,62 +79,131 @@
                 <li
                   class="w-[140px] h-[47px] rounded-[30px] border-2 border-solid border-white/30 bg-[#03030480] text-white flex justify-center items-center font-rubik font-bold"
                 >
-                  <a href="">Contact</a>
+                  <a href="./contact.html">Contact</a>
                 </li>
               </ul>
             </div>
           </nav>
+          <nav class="hidden max-md:flex max-sm:px-8 justify-between w-full">
+            <a href="./index.html">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="125"
+                  height="28"
+                  viewBox="0 0 125 28"
+                  fill="none"
+                >
+                  <circle
+                    cx="71"
+                    cy="14"
+                    r="9"
+                    stroke="white"
+                    stroke-opacity="0.15"
+                    stroke-width="10"
+                  />
+                  <circle
+                    opacity="0.6"
+                    cx="71"
+                    cy="14"
+                    r="8"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M2.91009 25H0L8.41688 3H11.2822L19.6991 25H16.789L9.93908 6.48047H9.76L2.91009 25ZM3.98459 16.4063H15.7145V18.7695H3.98459V16.4063Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M24.2097 25H21.2996L29.7165 3H32.5818L40.9987 25H38.0886L31.2387 6.48047H31.0596L24.2097 25ZM25.2842 16.4063H37.0141V18.7695H25.2842V16.4063Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M44.5692 25V3H52.3145C54.1053 3 55.5753 3.29362 56.7244 3.88086C57.8735 4.46094 58.7242 5.25944 59.2763 6.27637C59.8285 7.29329 60.1046 8.44987 60.1046 9.74609C60.1046 11.0423 59.8285 12.1917 59.2763 13.1943C58.7242 14.1969 57.8773 14.9847 56.7356 15.5576C55.5939 16.1234 54.1352 16.4063 52.3593 16.4063H46.0914V14H52.2697C53.4935 14 54.4784 13.8281 55.2246 13.4844C55.9782 13.1406 56.5229 12.6536 56.8587 12.0234C57.202 11.3861 57.3736 10.627 57.3736 9.74609C57.3736 8.86523 57.202 8.09538 56.8587 7.43652C56.5155 6.77767 55.967 6.26921 55.2134 5.91113C54.4598 5.5459 53.4636 5.36328 52.225 5.36328H47.345V25H44.5692ZM55.3589 15.1172L61 25H57.7765L52.225 15.1172H55.3589Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M101.217 3V25H98.5246L86.0062 7.72656H85.7819V25H83V3H85.6921L98.2554 20.3164H98.4797V3H101.217Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M125 3V25H122.308L109.789 7.72656H109.565V25H106.783V3H109.475L122.039 20.3164H122.263V3H125Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              height="32px"
+              id="Layer_1"
+              style="enable-background: new 0 0 32 32"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="32px"
+              xml:space="preserve"
+            >
+              <path
+                d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+                style="fill: #fff"
+              />
+            </svg>
+          </nav>
 
           <div
-            class="container text-white w-full h-[35vh] flex flex-col items-start justify-between mt-[12%]"
+            class="container text-white w-full h-[35vh] flex flex-col items-start justify-between mt-[12%] max-sm:items-center"
           >
+            <svg
+              class="absolute top-[0px] left-[-20%] max-md:hidden z-0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="917"
+              height="651"
+              viewBox="0 0 917 651"
+              fill="none"
+            >
+              <g filter="url(#filter0_f_101_462)">
+                <path
+                  d="M485.187 449.805C580.282 443.548 642.347 408.446 702.715 326.776C825.011 161.329 110.485 108.772 209.995 290.534C272.738 405.139 363.72 457.796 485.187 449.805Z"
+                  fill="white"
+                  fill-opacity="0.18"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_101_462"
+                  x="0.454948"
+                  y="-23.6465"
+                  width="916.391"
+                  height="674.24"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="100"
+                    result="effect1_foregroundBlur_101_462"
+                  />
+                </filter>
+              </defs>
+            </svg>
             <div
-              class="titleTextBox"
+              class="titleTextBox flex flex-col justify-end overflow-hidden max-sm:items-center"
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <h1 class="text-[72px] text-center font-bold">
+              <h1
+                class="text-[72px] text-center font-bold bgc max-lg:text-[50px]"
+              >
                 Contact Me
-                <svg
-                  class="absolute top-[-150%] right-[10%] z-0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="917"
-                  height="651"
-                  viewBox="0 0 917 651"
-                  fill="none"
-                >
-                  <g filter="url(#filter0_f_101_462)">
-                    <path
-                      d="M485.187 449.805C580.282 443.548 642.347 408.446 702.715 326.776C825.011 161.329 110.485 108.772 209.995 290.534C272.738 405.139 363.72 457.796 485.187 449.805Z"
-                      fill="white"
-                      fill-opacity="0.18"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_101_462"
-                      x="0.454948"
-                      y="-23.6465"
-                      width="916.391"
-                      height="674.24"
-                      filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
-                    >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="100"
-                        result="effect1_foregroundBlur_101_462"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
               </h1>
+
               <span class="text-[18px] font-rubik font-medium text-[#949494]">
                 For Any Project Knock Us
               </span>
@@ -141,11 +214,13 @@
       </div>
 
       <section
-        class="px-[140px] mt-[10%] flex flex-col justify-around h-[200vh]"
+        class="px-[140px] mt-[10%] flex flex-col justify-around h-[200vh] max-lg:px-20 max-md:px-16 max-sm:px-0"
       >
-        <div class="textContainer flex justify-between">
+        <div
+          class="textContainer flex justify-between max-sm:flex-col max-sm:items-center max-sm:w-full"
+        >
           <h2
-            class="text-[64px] text-white font-syne font-bold w-4/12"
+            class="text-[64px] text-white font-syne font-bold w-4/12 max-xl:text-[70px] max-lg:text-[50px] max-sm:text-center max-sm:text-[40px]"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -153,7 +228,7 @@
           </h2>
           <form
             action=""
-            class="w-1/2 h-[400px] flex flex-col justify-between items-start"
+            class="w-1/2 h-[400px] flex flex-col justify-between items-start max-sm:mt-10"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
@@ -194,7 +269,7 @@
             </button>
           </form>
         </div>
-        <div class="imagesContainer flex justify-between gap-2">
+        <div class="imagesContainer flex justify-between gap-2 max-sm:px-8">
           <img
             src="../images/contact-image-lap-top.png"
             class="w-full"
@@ -203,9 +278,9 @@
             data-aos-duration="1000"
           />
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 max-sm:px-8">
           <div
-            class="text-white text-[24px] font-syne font-bold flex justify-around"
+            class="text-white text-[24px] font-syne font-bold flex justify-around max-sm:text-[17px]"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -217,7 +292,7 @@
       </section>
 
       <footer
-        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white mt-[10%]"
+        class="px-[140px] w-full h-screen bg-[#131313] flex flex-col items-center justify-around text-white max-sm:flex max-sm:flex-col max-sm:items-center max-sm:px-8 max-md:px-16 max-lg:mt-[10%] max-lg:px-20"
       >
         <div
           class="title flex flex-col items-center"
@@ -225,13 +300,13 @@
           data-aos-duration="800"
         >
           <h2 class="text-main text-[24px] font-bold">Get in Touch With Us</h2>
-          <a href="" class="text-[64px] font-bold"
+          <a href="" class="text-[64px] font-bold max-md:text-[50px]"
             >info@aaronn.com
             <div class="line w-full h-1 bg-white mt-[-20px]"></div>
           </a>
         </div>
         <div
-          class="info w-full flex justify-between items-center"
+          class="info w-full flex justify-between items-center max-md:flex-col max-md:h-[300px]"
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
